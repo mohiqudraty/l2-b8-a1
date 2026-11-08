@@ -28,5 +28,29 @@ function concatenateArrays(...arrays) {
 }
 // concatenateArrays([1, 2], [3, 4], [5]);
 console.log(concatenateArrays(["a", "b"], ["c", "d"]));
+function getPopularCourses(Course, minStudents) {
+    // console.log(Course, minStudents);
+    const newArray = Course.filter((c) => c.isPublished && c.students >= minStudents);
+    return newArray;
+}
+// Sample Input:
+const courses = [
+    { title: "TypeScript Mastery", students: 120, isPublished: true },
+    { title: "Draft Course", students: 200, isPublished: false },
+    { title: "Basic HTML", students: 45, isPublished: true },
+    { title: "Next.js Pro", students: 85, isPublished: true },
+];
+// getPopularCourses(courses, 80);
+console.log(getPopularCourses(courses, 80));
+function pluckValues(items, key) {
+    return items.map(item => item[key]);
+}
+// Sample Input:
+const users = [
+    { id: 1, name: "Rakib", role: "Admin" },
+    { id: 2, name: "Sadia", role: "Editor" },
+    { id: 3, name: "Tariq", role: "Subscriber" }
+];
+console.log(pluckValues(users, "id"));
 export {};
 //# sourceMappingURL=solutions.js.map
