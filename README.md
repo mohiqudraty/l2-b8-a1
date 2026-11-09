@@ -9,6 +9,6 @@ In this assignment, I have successfully solved **8 practical programming problem
 * Classes, constructors, inheritance, and access modifiers
 
 Additionally, as part of the assignment requirements, I wrote two detailed technical blog posts:
-1. **Type Aliases vs Interfaces** (`type-vs-interface.md`)
-2. **Access Modifiers in TypeScript OOP** (`access-modifiers.md`)
 
+1. [Type Aliases vs Interfaces](./type-vs-interface.md)
+2. [Access Modifiers in TypeScript OOP](./access-modifiers.md)
